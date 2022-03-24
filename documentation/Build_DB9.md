@@ -37,7 +37,7 @@ There are level shifter that only have one GND and an extra connector called
 "OE". According to
 [this discussion](https://forum.arduino.cc/index.php?topic=406261.0)
 this needs to be connected to +5V using a 1k Ohm pull-up resistor. +5V needs
-to be connected to HV (or "VA" on some boards) of the level shifter.
+to be connected to HV of the level shifter.
 
 Powering the Arduino: Connect the keyboard connectors +5V to the RAW pin of 
 the Arduino pro mini (DON'T use the Vcc pin as it's only for 3V3). 
