@@ -11,7 +11,7 @@ Pins On Arduino
 Pin | Signal    | Note
 ----|-----------|------------------------------
  2  | KBCLK     |
- 3  | KBDAT     | may not be changed
+ 3  | KBDAT     | may not be changed (For A4000 do not level shift - eg. wire directly to pin 3)
  4  | DB9 Pin 1 | Y2 mouse signal
  5  | DB9 Pin 2 | X1 mouse signal
  6  | DB9 Pin 3 | Y1 mouse signal
@@ -37,10 +37,12 @@ There are level shifter that only have one GND and an extra connector called
 "OE". According to
 [this discussion](https://forum.arduino.cc/index.php?topic=406261.0)
 this needs to be connected to +5V using a 1k Ohm pull-up resistor. +5V needs
-to be connected to HV of the level shifter, RAW of the Arduino pro mini and
-the +5V pin of the keyboard connector. The +5V of the DB9 mouse connector
-can be skipped, since we are getting power from the keyboard connector
-already.
+to be connected to HV (or "VA" on some boards) of the level shifter.
+
+Powering the Arduino: Connect the keyboard connectors +5V to the RAW pin of 
+the Arduino pro mini (DON'T use the Vcc pin as it's only for 3V3). 
+The +5V of the DB9 mouse connector can be skipped, since we are getting power 
+from the keyboard connector already.
 
 The DB9 pins are described above, the pins of the keyboard connector differ
 from model to model.
@@ -87,7 +89,7 @@ Pin | Function
  1  | KBDAT
  2  | n/c
  3  | GND
- 4  | +5V
+ 4  | +5V (max: 100mA)
  5  | KBCLK
  6  | n/c
 
