@@ -105,7 +105,7 @@ FAQ
 * Why don't the LEDs (CAPS LOCK, etc.) work? \
   I don't know. They don't work with example code "USBHIDBootKbdAndMouse"
   either, on which this USB code is based on. My guess it's a bug in the USB
-  Host Shield library, or maybe it's my cheap USB host shield clone.
+  Host Shield library, or maybe it's my cheap USB host shield clone. \
   Note (2022/03/24): CAPS LOCK LED on Logitech K270 tested and works fine.
 
 * Can I send any CDTV specific codes via keyboard? \
