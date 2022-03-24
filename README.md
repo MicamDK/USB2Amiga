@@ -51,7 +51,7 @@ A1000  | untested     | untested | no system available for testing
 A1200  | *won't work* | untested | keyboard connected without controller
 A2000  | working      | working  | hardware available
 A3000  | working      | working  | tested by "ottifant011" from A1K.org
-A4000  | working      | working  | KBDAT must be connected directly to pin 3 (rest can be level shifted ex. DB9 pin 5 & 9)
+A4000  | working      | working  | KBDAT must be connected directly to pin 3 (rest can be level shifted excl. DB9 pin 5 & 9)
 A4000T | working      | working  | tested by "ottifant011" from A1K.org
 
 ------------------------------------------------------------------------------
