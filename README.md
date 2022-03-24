@@ -51,7 +51,7 @@ A1000  | untested     | untested | no system available for testing
 A1200  | *won't work* | untested | keyboard connected without controller
 A2000  | working      | working  | hardware available
 A3000  | working      | working  | tested by "ottifant011" from A1K.org
-A4000  | untested     | untested | no system available for testing
+A4000  | working      | working  | KBDAT must be connected directly to pin 3 (rest can be level shifted ex. DB9 pin 5 & 9)
 A4000T | working      | working  | tested by "ottifant011" from A1K.org
 
 ------------------------------------------------------------------------------
@@ -106,6 +106,7 @@ FAQ
   I don't know. They don't work with example code "USBHIDBootKbdAndMouse"
   either, on which this USB code is based on. My guess it's a bug in the USB
   Host Shield library, or maybe it's my cheap USB host shield clone.
+  Note (2022/03/24): CAPS LOCK LED on Logitech K270 tested and works fine.
 
 * Can I send any CDTV specific codes via keyboard? \
   This is possible. Right now, only one keystroke is implemented: the power
@@ -147,6 +148,9 @@ FAQ
   these keys. It looks like the protocol used - USB HID boot - does not
   support multimedia keys. So only switching to a different protocol forcing
   a full rewrite of the library might make this possible.
+  
+* Dos it support other than English keyboard layout chars? \
+  Yes. Tested with Scandinavian keyboard layout and works fine, others should to.
 
 ------------------------------------------------------------------------------
 
